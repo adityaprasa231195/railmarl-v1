@@ -48,3 +48,6 @@ lerna-debug.log*
 
 # Local presentation notes
 PRESENTATION_SCRIPT.md
+PRESENTATION_SCRIPT.pdf
+*.pdf
+presentation_script.html
