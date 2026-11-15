@@ -9,7 +9,7 @@
   "mae": 5.6,
   "rmse": 10.37,
   "r2_score": 0.952,
-  "last_trained_at": "2026-11-15T03:39:34.364148+00:00",
+  "last_trained_at": "2026-11-15T04:02:59.349279+00:00",
   "actual_vs_predicted": [
     {
       "trainNumber": "12156",

@@ -5,8 +5,20 @@ from dotenv import load_dotenv
 # Load local environment variables from .env
 load_dotenv()
 
+def _normalize_database_url() -> str:
+    raw = os.getenv("DATABASE_URL", "").strip()
+    # Strip surrounding single or double quotes entered in deployment dashboards
+    if (raw.startswith('"') and raw.endswith('"')) or (raw.startswith("'") and raw.endswith("'")):
+        raw = raw[1:-1].strip()
+    if not raw:
+        return "sqlite:///./railmarl.db"
+    # Normalize legacy postgres:// to postgresql:// if attached on Render
+    if raw.startswith("postgres://"):
+        return raw.replace("postgres://", "postgresql://", 1)
+    return raw
+
 class Settings:
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./railmarl.db")
+    DATABASE_URL: str = _normalize_database_url()
     DEBUG: bool = os.getenv("DEBUG", "True").lower() in ("true", "1", "yes")
     STATION_NAME: str = os.getenv("STATION_NAME", "Itarsi Junction (ET)")
     STATION_CODE: str = os.getenv("STATION_CODE", "ET")

@@ -3,7 +3,8 @@
 
 import type { Platform, Train } from '../data/mockData'
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+const rawApiUrl = (import.meta.env.VITE_API_URL as string | undefined)?.trim() || 'http://localhost:8000/api'
+const API_BASE = rawApiUrl.endsWith('/api') ? rawApiUrl : `${rawApiUrl.replace(/\/$/, '')}/api`
 
 export interface DashboardSummary {
   totalPlatforms: number
