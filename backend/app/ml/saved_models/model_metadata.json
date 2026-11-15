@@ -1,0 +1,200 @@
+{
+  "model_version": "dt-regressor-v2.0",
+  "status": "TRAINED",
+  "is_ready": true,
+  "algorithm": "Decision Tree Regression (Scikit-Learn DecisionTreeRegressor)",
+  "sample_count": 71,
+  "train_samples": 56,
+  "test_samples": 15,
+  "mae": 5.6,
+  "rmse": 10.37,
+  "r2_score": 0.952,
+  "last_trained_at": "2026-11-15T03:39:34.364148+00:00",
+  "actual_vs_predicted": [
+    {
+      "trainNumber": "12156",
+      "trainCategory": "SUPERFAST",
+      "scheduledDwell": 10,
+      "actual": 16.0,
+      "predicted": 16.2,
+      "variance": 0.2,
+      "accuracyPct": 99
+    },
+    {
+      "trainNumber": "12722",
+      "trainCategory": "SUPERFAST",
+      "scheduledDwell": 15,
+      "actual": 18.9,
+      "predicted": 20.5,
+      "variance": 1.6,
+      "accuracyPct": 92
+    },
+    {
+      "trainNumber": "12412",
+      "trainCategory": "SUPERFAST",
+      "scheduledDwell": 10,
+      "actual": 12.6,
+      "predicted": 11.5,
+      "variance": -1.1,
+      "accuracyPct": 91
+    },
+    {
+      "trainNumber": "11072",
+      "trainCategory": "EXPRESS",
+      "scheduledDwell": 25,
+      "actual": 26.4,
+      "predicted": 29.4,
+      "variance": 3.0,
+      "accuracyPct": 89
+    },
+    {
+      "trainNumber": "51828",
+      "trainCategory": "PASSENGER",
+      "scheduledDwell": 45,
+      "actual": 53.1,
+      "predicted": 47.2,
+      "variance": -5.9,
+      "accuracyPct": 89
+    },
+    {
+      "trainNumber": "51829",
+      "trainCategory": "PASSENGER",
+      "scheduledDwell": 35,
+      "actual": 43.3,
+      "predicted": 53.2,
+      "variance": 9.9,
+      "accuracyPct": 77
+    },
+    {
+      "trainNumber": "12138",
+      "trainCategory": "EXPRESS",
+      "scheduledDwell": 15,
+      "actual": 18.0,
+      "predicted": 18.0,
+      "variance": 0.0,
+      "accuracyPct": 100
+    },
+    {
+      "trainNumber": "18234",
+      "trainCategory": "EXPRESS",
+      "scheduledDwell": 15,
+      "actual": 20.0,
+      "predicted": 18.0,
+      "variance": -2.0,
+      "accuracyPct": 90
+    },
+    {
+      "trainNumber": "GOODS-8812",
+      "trainCategory": "FREIGHT",
+      "scheduledDwell": 150,
+      "actual": 169.4,
+      "predicted": 132.7,
+      "variance": -36.7,
+      "accuracyPct": 78
+    },
+    {
+      "trainNumber": "51829",
+      "trainCategory": "PASSENGER",
+      "scheduledDwell": 35,
+      "actual": 44.9,
+      "predicted": 47.2,
+      "variance": 2.3,
+      "accuracyPct": 95
+    },
+    {
+      "trainNumber": "12627",
+      "trainCategory": "SUPERFAST",
+      "scheduledDwell": 15,
+      "actual": 17.4,
+      "predicted": 20.6,
+      "variance": 3.2,
+      "accuracyPct": 82
+    },
+    {
+      "trainNumber": "12186",
+      "trainCategory": "EXPRESS",
+      "scheduledDwell": 15,
+      "actual": 16.7,
+      "predicted": 20.5,
+      "variance": 3.8,
+      "accuracyPct": 77
+    },
+    {
+      "trainNumber": "12627",
+      "trainCategory": "SUPERFAST",
+      "scheduledDwell": 15,
+      "actual": 21.4,
+      "predicted": 18.0,
+      "variance": -3.4,
+      "accuracyPct": 84
+    },
+    {
+      "trainNumber": "12138",
+      "trainCategory": "EXPRESS",
+      "scheduledDwell": 15,
+      "actual": 17.8,
+      "predicted": 20.5,
+      "variance": 2.7,
+      "accuracyPct": 85
+    },
+    {
+      "trainNumber": "GOODS-8812",
+      "trainCategory": "FREIGHT",
+      "scheduledDwell": 150,
+      "actual": 149.2,
+      "predicted": 141.1,
+      "variance": -8.1,
+      "accuracyPct": 95
+    }
+  ],
+  "feature_importances": [
+    {
+      "feature": "Category: Freight",
+      "importance": 0.9188
+    },
+    {
+      "feature": "Coaches",
+      "importance": 0.0548
+    },
+    {
+      "feature": "Arrival Minute",
+      "importance": 0.0181
+    },
+    {
+      "feature": "Scheduled Dwell Minutes",
+      "importance": 0.0063
+    },
+    {
+      "feature": "Arrival Hour",
+      "importance": 0.0015
+    },
+    {
+      "feature": "Day Of Week",
+      "importance": 0.0004
+    },
+    {
+      "feature": "Category: Superfast",
+      "importance": 0.0
+    },
+    {
+      "feature": "Category: Express",
+      "importance": 0.0
+    },
+    {
+      "feature": "Category: Passenger",
+      "importance": 0.0
+    },
+    {
+      "feature": "Category: Other",
+      "importance": 0.0
+    },
+    {
+      "feature": "Time Of Day Slot",
+      "importance": 0.0
+    },
+    {
+      "feature": "Platform Id",
+      "importance": 0.0
+    }
+  ]
+}

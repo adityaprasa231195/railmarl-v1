@@ -1,0 +1,9 @@
+python-interpreter = "C:/Program Files/Python310/python.exe"
+python-version = "3.10"
+python-platform = "windows"
+site-package-path = [
+    "C:/Program Files/Python310/lib/site-packages",
+    "C:/Users/study/AppData/Roaming/Python/Python310/site-packages"
+]
+search-path = [".", "backend"]
+

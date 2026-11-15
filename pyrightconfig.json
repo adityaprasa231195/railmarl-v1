@@ -1,0 +1,10 @@
+{
+  "pythonPath": "C:\\Program Files\\Python310\\python.exe",
+  "extraPaths": [
+    ".",
+    "backend",
+    "C:\\Program Files\\Python310\\lib\\site-packages",
+    "C:\\Users\\study\\AppData\\Roaming\\Python\\Python310\\site-packages"
+  ]
+}
+
